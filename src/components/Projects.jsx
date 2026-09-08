@@ -1,5 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+import DryRunnerLogo from '../assets/DryRunnerLogo.png'
 function Projects() {
     const animationvariant = (delay) => ({
         hidden: {
@@ -31,72 +32,62 @@ function Projects() {
             initial="hidden"
             whileInView='visible'
             className='rounded-2xl border-4 dark:border-neutral-800 border-neutral-500 p-4 max-w-xs'>
-                <div className='p-2'>
-                    <img className='rounded-2xl w-full' src='https://via.placeholder.com/150' alt="photo" />
-                </div>
-                <p className='px-2 dark:text-neutral-300 text-neutral-900'>RentIt</p>
+                {/* <div className='p-2'>
+                    <img className='rounded-2xl w-full' src={DryRunnerLogo} alt="photo" />
+                </div> */}
+                <p className='px-2 font-bold dark:text-purple-700 text-pink-400'>Dry Runner</p>
                 <div className='px-2 py-2 dark:text-neutral-300 text-neutral-900'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                    A web-based code visualization platform where developers write code, provide test cases, and get a step-by-step diagrammatic dry run.    
                 </div>
-                <span className='ml-1 mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-900'>ReactJs</span>
-                <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-900'>MongoDB</span>
-                <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-900'>Express</span>
-                <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-900'>NodeJs</span>
-                {/* <span className='mr-1 rounded bg-neutral-900 px-1.5 py-1 text-sm font-medium text-purple-900'>TailwindCSS</span> */}
+                <div className=' w-full flex flex-wrap justify-evenly'>
+                    <span className='ml-1 mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-700  my-1'>NextJs</span>
+                    <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-700 my-1'>TypeScript</span>
+                    <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-700 my-1'>Gemini-AI</span>
+                    <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-700 my-1'>TailwindCSS</span>
+                    {/* <span className='mr-1 rounded bg-neutral-900 px-1.5 py-1 text-sm font-medium text-purple-700'>TailwindCSS</span> */}
+                </div>
             </motion.div>
             <motion.div 
-            variants={animationvariant(0.4)}
+            variants={animationvariant(0.2)}
             initial="hidden"
             whileInView='visible'
             className='rounded-2xl border-4 dark:border-neutral-800 border-neutral-500 p-4 max-w-xs'>
-                <div className='p-2'>
+                {/* <div className='p-2'>
                     <img className='rounded-2xl w-full' src='https://via.placeholder.com/150' alt="photo" />
-                </div>
-                <p className='px-2 dark:text-neutral-300 text-neutral-900'>RentIt</p>
+                </div> */}
+                <p className='px-2 font-bold dark:text-purple-700 text-pink-400'>Contest Analyser</p>
                 <div className='px-2 py-2 dark:text-neutral-300 text-neutral-900'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                    Analyzes your Codeforces rated contest history to reveal which problem tags you consistently solve under contest pressure.
                 </div>
-                <span className='ml-1 mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-900'>ReactJs</span>
-                <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-900'>MongoDB</span>
-                <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-900'>Express</span>
-                <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-900'>NodeJs</span>
-                {/* <span className='mr-1 rounded bg-neutral-900 px-1.5 py-1 text-sm font-medium text-purple-900'>TailwindCSS</span> */}
+                <div className=' w-full flex flex-wrap justify-evenly'>
+                    <span className='ml-1 mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-700  my-1'>ReactJs</span>
+                    <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-700 my-1'>MongoDB</span>
+                    <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-700 my-1'>Express</span>
+                    <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-700 my-1'>NodeJs</span>
+                    <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-700 my-1'>TailwindCSS</span>
+                    {/* <span className='mr-1 rounded bg-neutral-900 px-1.5 py-1 text-sm font-medium text-purple-700'>TailwindCSS</span> */}
+                </div>
             </motion.div>
             <motion.div 
-            variants={animationvariant(0.6)}
+            variants={animationvariant(0.2)}
             initial="hidden"
             whileInView='visible'
             className='rounded-2xl border-4 dark:border-neutral-800 border-neutral-500 p-4 max-w-xs'>
-                <div className='p-2'>
+                {/* <div className='p-2'>
                     <img className='rounded-2xl w-full' src='https://via.placeholder.com/150' alt="photo" />
-                </div>
-                <p className='px-2 dark:text-neutral-300 text-neutral-900'>RentIt</p>
+                </div> */}
+                <p className='px-2 font-bold dark:text-purple-700 text-pink-400'>RentIt</p>
                 <div className='px-2 py-2 dark:text-neutral-300 text-neutral-900'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                    A full-stack rental listing platform with secure JWT-based user authentication, with sign-up, login, and session management.   
                 </div>
-                <span className='ml-1 mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-900'>ReactJs</span>
-                <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium  text-pink-400 dark:text-purple-900'>MongoDB</span>
-                <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium  text-pink-400 dark:text-purple-900'>Express</span>
-                <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-900'>NodeJs</span>
-                {/* <span className='mr-1 rounded bg-neutral-900 px-1.5 py-1 text-sm font-medium text-purple-900'>TailwindCSS</span> */}
-            </motion.div>
-            <motion.div 
-            variants={animationvariant(0.8)}
-            initial="hidden"
-            whileInView='visible'
-            className='rounded-2xl border-4 dark:border-neutral-800 border-neutral-500 p-4 max-w-xs'>
-                <div className='p-2'>
-                    <img className='rounded-2xl w-full' src='https://via.placeholder.com/150' alt="photo" />
+                <div className=' w-full flex flex-wrap justify-evenly'>
+                    <span className='ml-1 mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-700  my-1'>ReactJs</span>
+                    <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-700 my-1'>MongoDB</span>
+                    <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-700 my-1'>Express</span>
+                    <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-700 my-1'>NodeJs</span>
+                    <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-700 my-1'>TailwindCSS</span>
+                    {/* <span className='mr-1 rounded bg-neutral-900 px-1.5 py-1 text-sm font-medium text-purple-700'>TailwindCSS</span> */}
                 </div>
-                <p className='px-2 dark:text-neutral-300 text-neutral-900'>RentIt</p>
-                <div className='px-2 py-2 dark:text-neutral-300 text-neutral-900'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit
-                </div>
-                <span className='ml-1 mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-900'>ReactJs</span>
-                <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-900'>MongoDB</span>
-                <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-900'>Express</span>
-                <span className='mr-1 rounded bg-neutral-300 dark:bg-neutral-900 px-1.5 py-1 text-sm font-medium text-pink-400 dark:text-purple-900'>NodeJs</span>
-                {/* <span className='mr-1 rounded bg-neutral-900 px-1.5 py-1 text-sm font-medium text-purple-900'>TailwindCSS</span> */}
             </motion.div>
         </div>
     </div>
